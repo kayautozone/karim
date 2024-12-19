@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spraying & Maintenance - KAY AUTOZONE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        /* Navigation Bar Style */
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 15px 0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .specs-section, .image-gallery-section {
+            margin: 30px 0;
+        }
+
+        .specs-section h2, .image-gallery-section h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .specs-table th {
+            background-color: #f4f4f4;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="locateus.html">Locate Us</a>
+</nav>
+
+<header>
+    <h1>Welcome to KAY AUTOZONE</h1>
+    <p>Your Premier Vehicle Spraying and Maintenance Experts</p>
+</header>
+
+<div class="container">
+    <!-- Spraying and Maintenance Services Section -->
+    <section class="services-container">
+        <h2>Our Spraying & Maintenance Services</h2>
+
+        <!-- Service 1: Vehicle Spraying -->
+        <div class="service-card">
+            <img src="spraying.jpg" alt="Vehicle Spraying">
+            <h3>Vehicle Spraying</h3>
+            <p>Our vehicle spraying service ensures a smooth, glossy finish to your car's paint, protecting it from the elements.</p>
+            <p><strong>Price:</strong> $300</p>
+        </div>
+
+        <!-- Service 2: Scratch and Dent Repair -->
+        <div class="service-card">
+            <img src="dent car 2.jpg" alt="Scratch and Dent Repair">
+            <h3>Scratch & Dent Repair</h3>
+            <p>We fix minor scratches and dents to restore your vehicle's appearance and protect it from further damage.</p>
+            <p><strong>Price:</strong> $150</p>
+        </div>
+
+        <!-- Service 3: Engine Maintenance -->
+        <div class="service-card">
+            <img src="org enigine.jpg" alt="Engine Maintenance">
+            <h3>Engine Maintenance</h3>
+            <p>Regular engine maintenance to keep your vehicle running smoothly and efficiently.</p>
+            <p><strong>Price:</strong> $200</p>
+        </div>
+
+        <!-- Service 4: Oil Change -->
+        <div class="service-card">
+            <img src="OIP (oil change).jpg" alt="Oil Change">
+            <h3>Oil Change</h3>
+            <p>Get your oil changed regularly to improve engine performance and longevity.</p>
+            <p><strong>Price:</strong> $50</p>
+        </div>
+    </section>
+
+    <!-- Specifications Section for Maintenance -->
+    <section class="specs-section">
+        <h2>Maintenance Specifications</h2>
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th>Maintenance Service</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oil Type</td>
+                    <td>Fully Synthetic</td>
+                </tr>
+                <tr>
+                    <td>Brake Pads</td>
+                    <td>Premium Quality</td>
+                </tr>
+                <tr>
+                    <td>Fluid Check</td>
+                    <td>Engine Oil, Brake Fluid, Power Steering Fluid</td>
+                </tr>
+                <tr>
+                    <td>Tire Pressure</td>
+                    <td>32 PSI (Front & Rear)</td>
+                </tr>
+                <tr>
+                    <td>Battery Check</td>
+                    <td>Full Battery Test</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="image-gallery-section">
+        <h2>Maintenance & Spraying Gallery</h2>
+        <div class="image-gallery">
+            <img src="spray1.jpg" alt="Vehicle Spraying">
+            <img src="repair1.jpg" alt="Scratch and Dent Repair">
+            <img src="engine-maintenance.jpg" alt="Engine Maintenance">
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 KAY AUTOZONE. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

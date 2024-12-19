@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f88;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #097292;
+    padding: 10px 20px;
+    color: rgb(11, 57, 131);
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgb(10, 137, 50);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .user-icons a {
+    margin-left: 15px;
+    color: rgb(179, 15, 149);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: rgb(123, 9, 112);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #0ccb1f;
+    border: none;
+    color: rgb(36, 9, 152);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #159e0b;
+}
+
+/* Featured Cars Section */
+.featured-cars {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-cars h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.car-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.car-card {
+    background-color: rgb(12, 157, 173);
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+}
+
+.car-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.car-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.car-card button {
+    background-color: #044666;
+    color: rgb(115, 16, 16);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.car-card button:hover {
+    background-color: #e55d00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: rgb(24, 163, 21);
+    text-align: center;
+    padding: 20px;
+}

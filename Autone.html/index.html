@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Website</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #eaeaea;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #000000;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #05a3bf;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 30px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #8cc011;
+        }
+
+        /* Header Section */
+        .header {
+            background-image: url('audi 2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin-top: 60px; /* Space for fixed navbar */
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+        }
+
+        .header h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            z-index: 1;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .header p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            z-index: 1;
+            font-style: italic;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .header button {
+            background-color: #05a3bf;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        .header button:hover {
+            background-color: #8cc011;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+            background-color: #ffffff;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #f7f7f7;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #05a3bf;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid #05a3bf;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #05a3bf;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #8cc011;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2f88ae;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .header h1 {
+                font-size: 48px;
+            }
+
+            .header p {
+                font-size: 20px;
+            }
+
+            .navbar h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h2>KAY AUTOZONE</h2>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="locateus.html">Locate Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div>
+            <h1>FIND YOUR PERFECT RIDE</h1>
+            <p>Explore exclusive deals on cars and services just for you.</p>
+            
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards">
+        <div class="card">
+            <img src="mi6.jpg" alt="Explore">
+            <h3>Get the Best Car Deals</h3>
+            <p>Discover the best cars you need, available right now at unbeatable prices.</p>
+            <a href="readmore.html">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="spraying.jpg" alt="Cars for Sale">
+            <h3>Spraying and Maintenance</h3>
+            <p>Give your car a fresh new look and performance with expert services.</p>
+            <a href="findmore.html">Find Now</a>
+        </div>
+
+        <div class="card">
+            <img src="OIP (1).jpg" alt="Special Servicing">
+            <h3>Special Servicing Campaign</h3>
+            <p>Benefit from exclusive campaigns and servicing packages.</p>
+            <a href="exploretips.html">Explore Tips</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 KAY AUTOZONE | <a href="contactus.html">Contact Us</a> | <a href="aboutus.html">About Us</a></p>
+    </div>
+
+</body>
+</html>
